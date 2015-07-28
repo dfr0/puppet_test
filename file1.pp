@@ -16,7 +16,7 @@ file {'testfile3' :
   target  => '/tmp/testfile1',
 }
 
-dfaro {'dfaro' :
+user {'dfaro' :
   ensure => absent,
 }
 

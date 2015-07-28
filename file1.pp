@@ -11,14 +11,11 @@ file {'testfile2' :
   mode => 0644,
 }
 
-file {'testfile3' :
+file {'/tmp/testfile3' :
   ensure => link,
-  target  => '/tmp/testfile1',
-}
-
-user {'dfaro' :
-  ensure => absent,
+  target => 'tmp/testfile1',
 }
 
 notify {"te lo notifico":}
+
 notify {"soy yo mismo bitch!!!!!":}

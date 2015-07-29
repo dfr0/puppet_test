@@ -1,0 +1,3 @@
+user  {'dfaro' :
+	ensure => absent,
+  }
